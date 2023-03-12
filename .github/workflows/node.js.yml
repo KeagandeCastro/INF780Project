@@ -9,14 +9,15 @@ on:
   pull_request:
     branches: [ "master" ]
     
+defaults:
+  run:
+    working-directory: ./Angular/
 
 
 jobs:
   Build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./Angular/
+   
     
     strategy:
       matrix:
