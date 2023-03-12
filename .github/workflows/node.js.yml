@@ -11,10 +11,10 @@ on:
     
 defaults:
   run:
-    working-directory: Angular
+    working-directory: /Angular
 
 jobs:
-  build:
+  Build Angular:
     runs-on: ubuntu-latest
     
     strategy:
