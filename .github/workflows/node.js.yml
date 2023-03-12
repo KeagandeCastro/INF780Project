@@ -9,12 +9,13 @@ on:
   pull_request:
     branches: [ "master" ]
 
-defaults:
-  run:
-    working-directory: ./Angular/
+
 
 jobs:
   build:
+    defaults:
+     run:
+      working-directory: ./Angular/
 
     runs-on: ubuntu-latest        
 
@@ -23,9 +24,7 @@ jobs:
         node-version: [16.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
-    steps:
-    - name: Select Directory
-      working-directory: ./Angular  
+    steps:  
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v3
