@@ -15,7 +15,7 @@ jobs:
   build:
     defaults:
      run:
-      working-directory: ./Angular/
+      working-directory: ../Angular/
 
     runs-on: ubuntu-latest        
 
