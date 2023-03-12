@@ -15,7 +15,6 @@ namespace WebApi.Controllers
         {
             "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
-        sdf
 
         private readonly ILogger<WeatherForecastController> _logger;
 
