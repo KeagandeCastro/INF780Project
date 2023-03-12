@@ -11,14 +11,12 @@ on:
     
 defaults:
   run:
-    working-directory: web
+    working-directory: Angular
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-       run:
-          working-directory: /Angular
+    
     strategy:
       matrix:
         node-version: [16.x]
